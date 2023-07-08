@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    width: 600px;
+    margin: 15px auto;
+    text-align: center;
+}
+
+/*****  상단  *****/
+section > div:first-child{
+    position: absolute;
+    width: 600px;
+    height: 80px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgb(177, 178, 255);
+}
+section > div:first-child > span{
+    display: inline-block;
+    margin-top: 22px;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+/* 리셋버튼 */
+section > div:first-child > input{
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 20px;
+    width: 55px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 10%;
+    border: 3px solid rgb(210, 218, 255) ;
+    background-color: rgb(236, 239, 250);
+}
+section > div:first-child > input:hover{
+    opacity: 0.8;
+}
+
+/*****  main  *****/
+section > div:nth-child(2){
+    display: flex;
+    width: 600px;
+    height: 450px;
+    /*background-color:rgb(236, 239, 250);*/
+}
+section > div:nth-child(2) > div{
+    flex: 1;
+    padding-top: 100px;
+    box-sizing: border-box;
+    background-color:rgb(236, 239, 250);
+}
+/* me, com */
+section > div:nth-child(2) > div > span{
+    display: block;
+    margin-bottom: 35px;
+    font-size: x-large;
+    font-weight: bold;
+}
+/* 이미지 */
+section > div:nth-child(2) > div > img{
+    width: 220px;
+    height: 230px;
+}
+/* 가운데 라인 */
+section > div:nth-child(2) > div:first-child{
+    border-right: 2px solid rgb(210, 218, 255);
+}
+section > div:nth-child(2) > div:last-child{
+    border-left: 2px solid rgb(210, 218, 255);
+}
+
+/*****  score  *****/
+section > div:nth-child(3){
+    width: 600px;
+    height: 60px;
+    background-color:rgb(210, 218, 255);
+}
+section > div:nth-child(3) > span{
+    display: inline-block;
+    margin-top: 12px;
+    padding: 0 75px;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+/*****  btnArea  *****/
+section > div:last-child{
+    width: 600px;
+    height: 140px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgb(177, 178, 255);
+}
+section > div:last-child > input{
+    display: inline-block;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    margin: 19px 30px;
+    border-radius: 100%;
+    border: 3px solid rgb(210, 218, 255) ;
+    background-color: rgb(236, 239, 250);
+}
+
+section > div:last-child > input:hover{
+    opacity: 0.7;
+}
+/* 가위 */
+section > div:last-child > input:first-child{
+    background-image: url("./images/scissors.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+/* 바위 */
+section > div:last-child > input:nth-child(2){
+    background-image: url("./images/rock.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+/* 보 */
+section > div:last-child > input:last-child{
+    background-image: url("./images/paper.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
