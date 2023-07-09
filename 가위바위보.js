@@ -141,7 +141,7 @@ function start(){
         if( setting > 0){
             return;
         }
-        //음수 값이 아니면? 실행
+        //음수 값이 이면? 실행
         setting = setInterval(comPick, 110);
     }, 800);
 }
@@ -184,16 +184,3 @@ let setting = setInterval(comPick, 110);
 mePick();
 //리셋 초기화 함수
 reset();
-
-
-
-/* 1. 발생한문제 - 해결 */
-// setting = setInterval(comPick, 110);이 지속적으로 발생한다
-// 클릭할 때마다 빠르게 실행됨 -> 컴퓨터 선택 멈춤 함수 따로 빼네어
-// setInterval 종료 후 변수 setting 에 음수값 넣음
-// 차후 버튼을 클릭하고 게임을 진행해 음수값일 때만 setInterval 을
-// 설정하도록 조건 넣음
-
-/* 2. 버튼 중복 클릭 방지 */
-// 버튼이 중복 클릭됨으로 인해 의도대로 진행 안될 가능성이 있다.
-// 계속 이긴다거나...진다거나...
